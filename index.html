@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+html{
+	background-color: #ffe6ff;
+}
+
+header{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-family:Georgia,"Times New Roman",serif;
+}
+
+nav ul {
+	display: flex;				/* setting the nav ul (parent) to flex that contains the flexible area*/	
+	justify-content: center;
+	align-items: center;
+}
+	
+nav li {
+	list-style-type: none;	
+}
+
+nav a:link,
+nav a:visited {
+	display: inline-block;		/* Setting inline-block to the nav links to be in line */
+	width: 90px;
+	background-color: #ff3399;
+	border: 2px solid #330033;
+	border-radius: .5em;
+	color: #000000;	
+	padding: .5em;   
+    text-decoration: none;
+}
+
+#wrapper {
+	display: flex;				/* Setting a flexbox to the elements main and aside, 2 columns */
+	flex-direction: row;		/* Positioning the flex items direction to "row", so they can be right next to each other */
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	background-color:#90C7E3;
+	background-image: linear-gradient(to bottom, #FFFFFF,#90C7E3);
+	box-shadow: 3px 3px 3px 3px #333333;
+}
+
+main {
+	margin-left: 20px;
+	flex:8;						/* Using the flex property to customize the size of each flex item. */
+}	
+
+img {
+    width: 70%;
+    height: auto;
+}
+   
+p {
+	text-align: justify;
+	padding-right: 20px;
+}
+
+.sidebar {
+	flex: 2;					/* Using the flex property to customize the size of each flex item. */
+	width: 100px;
+	padding-left: 15px;
+	margin-left: 15px;
+	padding-top: 30px;
+	color: #ffffff;
+	float: right;
+	background-color: #FF1493;
+	border-radius: .5em;
+	border: 2px solid #330033;	
+}
+
+footer {
+	font-size: 75%;
+	font-style: italic;
+	text-align:center;
+	font-family:Georgia,"Times New Roman",serif;
+	padding: 2em;
+}
+
+@media screen and (max-width: 600px) {
+
+	#wrapper {
+	flex-direction: column;				/* Changing positions of flex-items to column for mobile */
+	}
+
+	h2 {
+	font-size: 18px;
+	}
+	
+	nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+
+	nav a:link,
+	nav a:visited {
+	display:flex;						/* Setting the nav links to flex instead of inline-block so they can be on top of each other for mobile */
+	justify-content: center;
+	width: 100px;
+	}
+  
+	.sidebar {
+	width: 50%;
+	}
+  
+	img {
+	width: 95%;
+	}
+}
+</style>
+
+<title>Grazi Makeup</title>
+</head>
+
+<body>
+	
+
+		<header>
+			<h1>Grazi Makeup</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="yurts.html">Brands</a></li>
+				<li><a href="activities.html">Skincare</a></li>
+				<li><a href="reservations.html">Sale & Offers</a>
+			</ul>
+		</nav>
+		
+		<div id="wrapper">
+			<main>
+
+			<h2> The Best Makeup Products on the Market </h2>
+
+				<p><span class="resort">Grazi Makeup </span> lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+				<img src="products.jpg" alt="products">
+
+			</main>
+			
+			<aside class="sidebar">
+				<b><i>Grazi Makeup</i></b><br>
+				727 Brazil Rd <br>
+				Philadephia, PA 19800 <br>
+				<br>888-555-5555
+			</aside>
+					
+		
+		</div>
+  
+		<footer>
+	
+			<br>Copyright &copy; 2020 Grazi Makeup
+			<br><a href="mailto:gragomes09@gmail.com">gragomes09@gmail.com</a>
+		</footer>
+	
+</body>
+</html>
